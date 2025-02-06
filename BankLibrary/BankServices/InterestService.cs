@@ -18,13 +18,13 @@ namespace BankServices
                 if (account is SavingsAccount savingsAccount)
                 {
                     savingsAccount.ApplyInterest();
-                    Console.WriteLine($"Interest applied to SavingsAccount ({savingsAccount.AccountNumber} New Balance {savingsAccount.Balance:C}");
+                    Console.WriteLine($"Interest applied to SavingsAccount ({savingsAccount.AccountNumber}) New Balance {savingsAccount.Balance:C}");
                 }
                 if (account is HighInterestSavingsAccount highInterestSavingsAccount)
                 {
                     highInterestSavingsAccount.ApplyInterest();
                     highInterestSavingsAccount.ApplyBonusInterest(0.01m);
-                    Console.WriteLine($"Interest applied to SavingsAccount ({highInterestSavingsAccount.AccountNumber} New Balance {highInterestSavingsAccount.Balance:C}");
+                    Console.WriteLine($"Interest applied to SavingsAccount ({highInterestSavingsAccount.AccountNumber}) New Balance {highInterestSavingsAccount.Balance:C}");
                 }
             }
         }

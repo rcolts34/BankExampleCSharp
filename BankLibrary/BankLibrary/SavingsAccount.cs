@@ -16,7 +16,7 @@ namespace BankLibrary
         }
         public void ApplyInterest()
         {
-            decimal interestPayment = Balance * InterestRate;
+            decimal interestPayment = this.Balance * InterestRate;
             this.Deposit(interestPayment);
         }
     }
